@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>Admin Portal - Chirayu Swasthya Gastro &amp; Liver Hospital</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-low":"#f5f3ed","ivory-surface":"#FDFCF9","inverse-on-surface":"#f3f1eb","secondary-fixed":"#a5f0e7","on-primary":"#ffffff","tertiary":"#1d1200","surface-container-highest":"#e4e2dd","inverse-surface":"#30312d","on-primary-fixed-variant":"#304c46","on-tertiary":"#ffffff","tertiary-fixed-dim":"#dfc391","primary-fixed-dim":"#aecdc5","secondary":"#146a63","error-container":"#ffdad6","surface-dim":"#dcdad4","primary-fixed":"#cae9e1","surface":"#fbf9f3","champagne-light":"#F3EDE2","on-primary-fixed":"#02201b","on-secondary-fixed-variant":"#00504a","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#89d4cb","error":"#ba1a1a","tertiary-container":"#362603","on-secondary-fixed":"#00201d","primary-container":"#102d28","on-background":"#1b1c18","primary":"#001814","on-error":"#ffffff","surface-container":"#f0eee8","on-tertiary-fixed":"#261900","on-tertiary-container":"#a58c5f","background":"#fbf9f3","surface-container-high":"#eae8e2","surface-variant":"#e4e2dd","on-secondary":"#ffffff","tertiary-fixed":"#fddfab","secondary-container":"#a2ede4","on-surface-variant":"#414846","outline-variant":"#c1c8c5","on-surface":"#1b1c18","outline":"#727976","on-secondary-container":"#1c6e67","inverse-primary":"#aecdc5","on-tertiary-fixed-variant":"#57441d","on-primary-container":"#78958e","surface-tint":"#47645e","charcoal":"#202724","surface-bright":"#fbf9f3","soft-sage":"#DDE7DF","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","gutter-mobile":"1rem","gutter":"1.5rem","space-xl":"3rem","space-sm":"0.5rem","space-md":"1rem","margin-mobile":"1.25rem","space-lg":"1.75rem","margin":"3rem"},"fontFamily":{"body-lg":["Manrope"],"headline-lg":["Playfair Display"],"display-lg-mobile":["Playfair Display"],"title-md":["Manrope"],"body-md":["Manrope"],"label-sm":["Inter"],"headline-md":["Playfair Display"],"body-sm":["Manrope"],"headline-sm":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"label-md":["Inter"],"display-lg":["Playfair Display"],"title-lg":["Manrope"]},"fontSize":{"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"500"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"500"}],"headline-md":["28px",{"lineHeight":"36px","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"30px","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"0em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"68px","letterSpacing":"-0.02em","fontWeight":"600"}],"title-lg":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-primary-container text-ivory-surface z-50 flex flex-col justify-between border-r border-tertiary-fixed-dim/20 shadow-[4px_0_24px_rgba(0,24,20,0.2)]"><div class="flex flex-col"><div class="p-6 border-b border-primary/40"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded bg-primary flex items-center justify-center border border-tertiary-fixed-dim/30"><span class="material-symbols-outlined text-tertiary-fixed text-[20px]">shield_with_house</span></div><div><span class="font-headline-sm text-title-lg text-ivory-surface uppercase tracking-wide">Chirayu Portal</span><p class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-widest">Clinical Operations</p></div></div></div><nav class="flex flex-col gap-1 p-4" data-active-classes="bg-primary text-secondary-fixed border-l-2 border-secondary-fixed"><a aria-current="page" class="flex items-center gap-3 px-3.5 py-2.5 rounded transition-all font-body-sm bg-primary text-secondary-fixed border-l-2 border-secondary-fixed" data-path="admin-portal" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Overview &amp; Triage</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded text-primary-fixed hover:bg-primary/50 hover:text-on-primary transition-all font-body-sm text-body-sm" data-path="patient-enquiries" href="#"><span class="material-symbols-outlined text-[20px]">inbox</span><span>Inbound Enquiries</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded text-primary-fixed hover:bg-primary/50 hover:text-on-primary transition-all font-body-sm text-body-sm" data-path="facilities-and-tech" href="#"><span class="material-symbols-outlined text-[20px]">upload_file</span><span>OT &amp; Endoscopy Tech</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded text-primary-fixed hover:bg-primary/50 hover:text-on-primary transition-all font-body-sm text-body-sm" data-path="areas-of-care" href="#"><span class="material-symbols-outlined text-[20px]">stethoscope</span><span>Doctor Schedules</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded text-primary-fixed hover:bg-primary/50 hover:text-on-primary transition-all font-body-sm text-body-sm" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">public</span><span>Return to Website</span></a></nav></div><div class="p-4 border-t border-primary/40"><div class="p-3 rounded bg-primary/40 flex items-center justify-between"><div class="flex flex-col"><span class="font-label-md text-label-md text-ivory-surface">Dr. Hitesh Sharma</span><span class="font-label-sm text-label-sm text-tertiary-fixed">Admin • Hanumangarh</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center border border-tertiary-fixed-dim/30"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl border-b border-soft-sage z-40 flex items-center justify-between px-8"><div class="flex items-center gap-2"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Chirayu Swasthya • Hospital Administration</span></div><div class="flex items-center gap-4"><div class="flex items-center gap-2 px-3 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-secondary"></span><span>HIS Server: Online</span></div><a class="font-label-md text-label-md text-secondary hover:underline uppercase tracking-wider" data-path="about" href="#">Main Site</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full px-8 bg-surface min-h-screen"><div class="flex flex-col w-full pb-16 space-y-8">
+<!-- Command Strip & Operational Status Bar -->
+<section class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 p-6 bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center gap-6">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Live Operational Deck</span>
+<span class="font-label-sm text-label-sm text-outline">| Hanumangarh Junction Hub</span>
+</div>
+<h1 class="font-headline-sm text-headline-sm text-primary">Clinical Command &amp; Operations</h1>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-2 rounded-lg">
+<div class="w-8 h-8 rounded-full bg-primary-container text-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">medical_services</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Active Consultant</span>
+<span class="font-title-md text-title-md text-primary">Dr. Hitesh Sharma <span class="font-label-sm text-label-sm text-secondary font-normal">(MD, DM Gastro)</span></span>
+</div>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-2 rounded-lg">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Current Window</span>
+<span class="font-title-md text-title-md text-primary">Evening OPD • 05:00 PM – 07:00 PM</span>
+</div>
+</div>
+</div>
+<!-- Quick Operations Actions -->
+<div class="flex items-center gap-2 flex-wrap">
+<button class="flex items-center gap-2 px-4 py-2.5 bg-primary text-ivory-surface rounded font-label-md text-label-md hover:bg-secondary transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>New Patient Entry</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2.5 bg-surface-container text-on-surface-variant rounded font-label-md text-label-md hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export Daily Log</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2.5 bg-champagne-light text-tertiary-container rounded font-label-md text-label-md hover:bg-tertiary-fixed-dim transition-all">
+<span class="material-symbols-outlined text-[18px]">notification_important</span>
+<span>Emergency Flash</span>
+</button>
+</div>
+</section>
+<!-- Metric Architecture -->
+<section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Inbound Inquiries</span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline-lg text-headline-lg text-primary leading-none">18</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">New Today</span>
+</div>
+</div>
+<div class="p-2.5 bg-soft-sage/40 text-secondary rounded-lg">
+<span class="material-symbols-outlined text-[24px]">contact_support</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant bg-surface-container-low px-3 py-1.5 rounded">
+<span class="font-body-sm text-body-sm">Contacted: 6/18</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">33% Cleared</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">WhatsApp Triage</span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline-lg text-headline-lg text-primary leading-none">34</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Dispatched</span>
+</div>
+</div>
+<div class="p-2.5 bg-secondary-fixed/40 text-on-secondary-container rounded-lg">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant bg-surface-container-low px-3 py-1.5 rounded">
+<span class="font-body-sm text-body-sm">Avg. Response Time</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">4.2 Mins</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Lab &amp; Diagnostic Run</span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline-lg text-headline-lg text-primary leading-none">12</span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-medium">Booked</span>
+</div>
+</div>
+<div class="p-2.5 bg-champagne-light text-tertiary-container rounded-lg">
+<span class="material-symbols-outlined text-[24px]">science</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant bg-surface-container-low px-3 py-1.5 rounded">
+<span class="font-body-sm text-body-sm">Biochemistry &amp; USG</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">On Track</span>
+</div>
+</div>
+<!-- Metric 4: Capacity Bar -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">OPD Slot Occupancy</span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline-lg text-headline-lg text-primary leading-none">78%</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">High</span>
+</div>
+</div>
+<div class="p-2.5 bg-primary-container text-tertiary-fixed rounded-lg">
+<span class="material-symbols-outlined text-[24px]">event_seat</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 78%"></div>
+</div>
+<div class="flex justify-between items-center mt-2 font-label-sm text-label-sm text-outline">
+<span>Cap: 45 Tokens</span>
+<span class="text-primary font-medium">35 Allotted</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Administration Workspace -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-8">
+<!-- Left 8 Columns: Live Clinical Tables & CMS Controls -->
+<div class="xl:col-span-8 space-y-8 min-w-0">
+<!-- Patient Inquiries Realtime Feed -->
+<section class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Triage Submissions</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Inbound Patient Inquiries</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-secondary-fixed/50 text-on-secondary-container font-label-sm text-label-sm font-semibold">Live Sync Active</span>
+<button class="p-1.5 rounded hover:bg-surface-container text-outline hover:text-primary">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-outline font-label-sm text-label-sm uppercase">
+<th class="p-3.5 rounded-l">Patient Details</th>
+<th class="p-3.5">Specialty / Issue</th>
+<th class="p-3.5">Preferred Slot</th>
+<th class="p-3.5">Status</th>
+<th class="p-3.5 text-right rounded-r">Direct Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 space-y-1">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="p-3.5">
+<div class="font-title-md text-title-md text-primary">Rajesh Kumar Verma</div>
+<div class="font-body-sm text-body-sm text-outline">+91 98291-44310 • Hanumangarh Town</div>
+</td>
+<td class="p-3.5">
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Chronic Liver / Fatty Liver</span>
+</td>
+<td class="p-3.5 font-body-sm text-body-sm text-on-surface">
+                  Today, Evening OPD<br/>
+<span class="text-outline font-label-sm text-label-sm">Token #24</span>
+</td>
+<td class="p-3.5">
+<span class="px-2.5 py-1 rounded-full bg-champagne-light text-tertiary-container font-label-sm text-label-sm font-semibold inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span> Pending
+                  </span>
+</td>
+<td class="p-3.5 text-right">
+<div class="inline-flex items-center gap-2">
+<a class="px-3 py-1.5 bg-secondary text-on-primary rounded font-label-sm text-label-sm inline-flex items-center gap-1.5 hover:bg-primary transition-colors" href="https://wa.me/919829144310" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span> WhatsApp
+                    </a>
+<button class="p-1.5 bg-surface-container rounded text-outline hover:text-primary">
+<span class="material-symbols-outlined text-[16px]">call</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="p-3.5">
+<div class="font-title-md text-title-md text-primary">Manpreet Kaur</div>
+<div class="font-body-sm text-body-sm text-outline">+91 94142-88712 • Tibbi Rd, Sector 12</div>
+</td>
+<td class="p-3.5">
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Endoscopy / Acid Reflux</span>
+</td>
+<td class="p-3.5 font-body-sm text-body-sm text-on-surface">
+                  Tomorrow, Morning OPD<br/>
+<span class="text-outline font-label-sm text-label-sm">10:30 AM Slot</span>
+</td>
+<td class="p-3.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-container font-label-sm text-label-sm font-semibold inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> WhatsApp Sent
+                  </span>
+</td>
+<td class="p-3.5 text-right">
+<div class="inline-flex items-center gap-2">
+<a class="px-3 py-1.5 bg-surface-container text-on-surface-variant rounded font-label-sm text-label-sm inline-flex items-center gap-1.5 hover:bg-secondary hover:text-on-primary transition-colors" href="https://wa.me/919414288712" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span> Followup
+                    </a>
+<button class="p-1.5 bg-surface-container rounded text-outline hover:text-primary">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="p-3.5">
+<div class="font-title-md text-title-md text-primary">Satnam Singh Brar</div>
+<div class="font-body-sm text-body-sm text-outline">+91 99298-11209 • Rawatsar</div>
+</td>
+<td class="p-3.5">
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Jaundice &amp; Bilirubin Workup</span>
+</td>
+<td class="p-3.5 font-body-sm text-body-sm text-on-surface">
+                  Urgent Lab • Today<br/>
+<span class="text-outline font-label-sm text-label-sm">LFT Profile Run</span>
+</td>
+<td class="p-3.5">
+<span class="px-2.5 py-1 rounded-full bg-soft-sage text-primary font-label-sm text-label-sm font-semibold inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Called • Confirmed
+                  </span>
+</td>
+<td class="p-3.5 text-right">
+<div class="inline-flex items-center gap-2">
+<button class="px-3 py-1.5 bg-surface-container text-on-surface-variant rounded font-label-sm text-label-sm inline-flex items-center gap-1.5 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px]">print</span> Lab Slip
+                    </button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Hospital Photography & Infrastructure Assets Manager -->
+<section class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Media &amp; Clinical Galleries</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Hospital Facility Photography</h2>
+<p class="font-body-sm text-body-sm text-outline mt-1">Manage public gallery, clinical diagnostic laboratory, and center exterior photography.</p>
+</div>
+<button class="px-3.5 py-2 bg-primary text-ivory-surface rounded font-label-md text-label-md inline-flex items-center gap-2 hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined text-[18px]">cloud_upload</span> Upload New Shot
+          </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Live Image 1: Facility Lab -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative h-56 w-full overflow-hidden group">
+<img alt="Chirayu Swasthya Hospital Diagnostic Laboratory" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2dD4MyGLqE0VqDNMNtqAZqvtdWLVA8kd99x1xezZJh09LcM6zd1RVH0BZMUDSgxF7ih70-QonD9L5oJ0kaTlVQPRvba6BD4j1EgdbYc4NRgdruR49usoKHjHVOlQlt7vEpuak6LnSjau9uAClWccHf9Y2ILOndeFGsnYIPaBUfKNSXJmhG1rIMNCYVVddM8b-NluvnQrHjAdmTQrromH_mdDUtMFwMLLKal7SqF6dxKTsMUWq3xMV"/>
+<div class="absolute top-3 left-3 bg-primary-container/85 backdrop-blur text-ivory-surface px-2.5 py-1 rounded text-label-sm font-label-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span> Active Public View
+              </div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur px-2 py-1 rounded text-primary font-label-sm text-label-sm">
+                Diagnostic Chemistry Lab
+              </div>
+</div>
+<div class="p-4 space-y-3">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-title-md text-title-md text-primary">In-house Automated Pathology</h3>
+<p class="font-body-sm text-body-sm text-outline">Clinical biochemistry analyzer and diagnostic blood sample bench</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1.5 bg-surface-container text-on-surface rounded font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">Replace Photo</button>
+<button class="px-2.5 py-1.5 bg-surface-container text-on-surface rounded font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">Edit Caption</button>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Live Image 2: Reception & OPD Waiting Area -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative h-56 w-full overflow-hidden group">
+<img alt="Chirayu Swasthya Hospital Reception OPD Consultation Wing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5PwEruLu2g46yJbDrMRr2mQvU2OqaonVpf3UxbySLJMU7L2Tqg22yE2UVdhplc8uHYQ-4O11YhH-pm-dTcx70J_r4QDdZsCzLfTCYTgaFpUjOLhDIAT_wNCQjBNlKeD8u89-YevdiGd_Qga74p3oiYIS0t2dOJ5p_qqKyjEUYXPUeJdb7ICDTH8x8Ru1Q7ST80n8tPwaCYebWj-Y6MIWeMYTNIYELa-3kFkMHfkqdI2kVMdxZbcHr"/>
+<div class="absolute top-3 left-3 bg-primary-container/85 backdrop-blur text-ivory-surface px-2.5 py-1 rounded text-label-sm font-label-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span> Active Public View
+              </div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur px-2 py-1 rounded text-primary font-label-sm text-label-sm">
+                OPD Wing &amp; Reception Corridor
+              </div>
+</div>
+<div class="p-4 space-y-3">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-title-md text-title-md text-primary">Patient Lounge &amp; Consultation Suites</h3>
+<p class="font-body-sm text-body-sm text-outline">Showing OPD timing board (10:00 AM - 2:00 PM • 5:00 PM - 7:00 PM)</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1.5 bg-surface-container text-on-surface rounded font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">Replace Photo</button>
+<button class="px-2.5 py-1.5 bg-surface-container text-on-surface rounded font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">Edit Caption</button>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Hero & Brand Messaging Live Editor -->
+<section class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-6">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Web Experience Sync</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Hero &amp; Editorial Content Editor</h2>
+</div>
+<button class="px-4 py-2 bg-primary text-ivory-surface rounded font-label-md text-label-md hover:bg-secondary transition-colors inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">save</span> Publish Live Update
+          </button>
+</div>
+<div class="space-y-5">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-outline uppercase mb-1">Eyebrow Tagline</label>
+<input class="w-full bg-surface-container-low px-4 py-2.5 rounded font-body-md text-body-md text-primary focus:outline-none focus:bg-surface-container" type="text" value="Super-Specialty Gastro &amp; Hepatology Center • Hanumangarh"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-outline uppercase mb-1">Consultation Lead Doctor</label>
+<input class="w-full bg-surface-container-low px-4 py-2.5 rounded font-body-md text-body-md text-primary focus:outline-none focus:bg-surface-container" type="text" value="Dr. Hitesh Sharma, MD, DM (Gastroenterology) Ex-SMS Hospital Jaipur"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-outline uppercase mb-1">Main Editorial Headline</label>
+<input class="w-full bg-surface-container-low px-4 py-2.5 rounded font-headline-md text-headline-md text-primary focus:outline-none focus:bg-surface-container" type="text" value="Digestive Health. Deserves Better Care."/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-outline uppercase mb-1">Clinical Narrative Body</label>
+<textarea class="w-full bg-surface-container-low p-4 rounded font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container" rows="3">Dedicated to advanced diagnostic endoscopy, hepatobiliary disorders, and holistic gastrointestinal recovery with precision equipment and compassionate care in northern Rajasthan.</textarea>
+</div>
+<!-- Emergency Banner Switcher -->
+<div class="p-4 bg-champagne-light rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-container text-[24px]">campaign</span>
+<div>
+<span class="font-title-md text-title-md text-tertiary-container">Top Website Alert Strip</span>
+<p class="font-body-sm text-body-sm text-on-tertiary-fixed-variant">"Sunday Special OPD: Prior Token Booking Mandatory • Call 98870-21645"</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 bg-surface-container-lowest text-tertiary-container rounded font-label-sm text-label-sm font-semibold hover:bg-tertiary-fixed transition-colors">Edit Strip</button>
+<span class="px-2.5 py-1 rounded bg-tertiary-container text-tertiary-fixed font-label-sm text-label-sm font-medium">Visible</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Areas of Care Manager -->
+<section class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Specialty Catalog</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Areas of Care Manager</h2>
+</div>
+<button class="px-3.5 py-1.5 bg-surface-container text-primary rounded font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">add</span> Add Clinical Area
+          </button>
+</div>
+<div class="space-y-3">
+<!-- Area 1 -->
+<div class="p-4 bg-surface-container-low rounded-lg flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline cursor-grab">drag_indicator</span>
+<div class="w-9 h-9 rounded bg-primary-container text-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">water_bottle</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Hepatology &amp; Liver Cirrhosis</h4>
+<p class="font-body-sm text-body-sm text-outline">Hepatitis B &amp; C management, jaundice, fatty liver, and portal hypertension</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-1 rounded bg-secondary-fixed/50 text-on-secondary-container font-label-sm text-label-sm font-semibold">6 Services</span>
+<button class="p-2 text-outline hover:text-primary"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+</div>
+</div>
+<!-- Area 2 -->
+<div class="p-4 bg-surface-container-low rounded-lg flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline cursor-grab">drag_indicator</span>
+<div class="w-9 h-9 rounded bg-primary-container text-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">fiber_manual_record</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Advanced Diagnostic Endoscopy &amp; Colonoscopy</h4>
+<p class="font-body-sm text-body-sm text-outline">Upper GI scopy, biopsy sampling, band ligation, and therapeutic stricture dilation</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-1 rounded bg-secondary-fixed/50 text-on-secondary-container font-label-sm text-label-sm font-semibold">8 Services</span>
+<button class="p-2 text-outline hover:text-primary"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+</div>
+</div>
+<!-- Area 3 -->
+<div class="p-4 bg-surface-container-low rounded-lg flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline cursor-grab">drag_indicator</span>
+<div class="w-9 h-9 rounded bg-primary-container text-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">medical_services</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Pancreato-Biliary &amp; Gall Bladder Disorders</h4>
+<p class="font-body-sm text-body-sm text-outline">Acute/Chronic pancreatitis, bile duct stones, and diagnostic evaluation</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-1 rounded bg-secondary-fixed/50 text-on-secondary-container font-label-sm text-label-sm font-semibold">4 Services</span>
+<button class="p-2 text-outline hover:text-primary"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right 4 Columns: Operations, Verified Timings, Emergency Hotlines, & System Security -->
+<div class="xl:col-span-4 space-y-8 min-w-0">
+<!-- Operations & Timing Control -->
+<section class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-secondary text-[22px]">timer</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">OPD Timings &amp; Hotlines</h2>
+</div>
+<p class="font-body-sm text-body-sm text-outline mb-5">These settings sync directly across the hospital website, prescription printouts, and appointment auto-replies.</p>
+<div class="space-y-4">
+<div class="p-3.5 bg-surface-container-low rounded-lg space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary uppercase">Morning Shift</span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed/60 text-on-secondary-container font-label-sm text-label-sm font-semibold">Open</span>
+</div>
+<div class="flex items-center gap-2">
+<input class="w-1/2 p-2 bg-surface-container-lowest rounded font-body-sm text-body-sm text-primary text-center" type="text" value="10:00 AM"/>
+<span class="font-label-sm text-label-sm text-outline">to</span>
+<input class="w-1/2 p-2 bg-surface-container-lowest rounded font-body-sm text-body-sm text-primary text-center" type="text" value="02:00 PM"/>
+</div>
+</div>
+<div class="p-3.5 bg-surface-container-low rounded-lg space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary uppercase">Evening Shift</span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed/60 text-on-secondary-container font-label-sm text-label-sm font-semibold">Current</span>
+</div>
+<div class="flex items-center gap-2">
+<input class="w-1/2 p-2 bg-surface-container-lowest rounded font-body-sm text-body-sm text-primary text-center" type="text" value="05:00 PM"/>
+<span class="font-label-sm text-label-sm text-outline">to</span>
+<input class="w-1/2 p-2 bg-surface-container-lowest rounded font-body-sm text-body-sm text-primary text-center" type="text" value="07:00 PM"/>
+</div>
+</div>
+<!-- Official Verified Phone Numbers (From Real Board Signage) -->
+<div class="pt-2 space-y-3">
+<span class="font-label-sm text-label-sm text-outline uppercase block">Hospital Contact Lines</span>
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">phone_in_talk</span>
+<div>
+<span class="font-title-md text-title-md text-primary">98870-21645</span>
+<span class="block font-label-sm text-label-sm text-outline">Front Desk &amp; Appointment OPD</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">emergency</span>
+<div>
+<span class="font-title-md text-title-md text-primary">99298-66537</span>
+<span class="block font-label-sm text-label-sm text-outline">Emergency GI Care Hotline</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+</div>
+</div>
+<button class="w-full py-2.5 bg-primary text-ivory-surface rounded font-label-md text-label-md hover:bg-secondary transition-colors mt-2">
+            Save Timing Changes
+          </button>
+</div>
+</section>
+<!-- Doctor On-Duty & Triage Roster -->
+<section class="bg-primary-container text-ivory-surface p-6 rounded-xl shadow-sm relative overflow-hidden">
+<div class="relative z-10 space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary-fixed uppercase font-semibold">Attending Consultant</span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed"></span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center font-headline-sm text-headline-sm text-tertiary-fixed">
+              HS
+            </div>
+<div>
+<h3 class="font-title-lg text-title-lg text-ivory-surface">Dr. Hitesh Sharma</h3>
+<p class="font-label-sm text-label-sm text-tertiary-fixed-dim">M.D., D.M. (Gastroenterology)</p>
+<p class="font-label-sm text-label-sm text-on-primary-container">Ex. SMS Medical College &amp; Hospital, Jaipur</p>
+</div>
+</div>
+<div class="bg-primary/50 p-3 rounded-lg space-y-1.5">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-tertiary-fixed-dim">Status:</span>
+<span class="text-ivory-surface font-semibold">In Consultation Room 2</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-tertiary-fixed-dim">Patients Waiting:</span>
+<span class="text-secondary-fixed font-semibold">7 Patients</span>
+</div>
+</div>
+<div class="flex gap-2 pt-1">
+<button class="w-full py-2 bg-secondary text-on-primary rounded font-label-sm text-label-sm hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors">
+              Pause Intake (15m)
+            </button>
+<button class="w-full py-2 bg-primary text-ivory-surface rounded font-label-sm text-label-sm hover:bg-surface-container-low hover:text-primary transition-colors">
+              Switch Room
+            </button>
+</div>
+</div>
+</section>
+<!-- System Security & Audit Log -->
+<section class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[20px]">security</span>
+<h3 class="font-title-md text-title-md text-primary">Audit Log &amp; Auth</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono">v3.4.1</span>
+</div>
+<div class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex justify-between pb-2">
+<span class="text-outline">Session Role:</span>
+<span class="font-medium text-primary">Chief Medical Admin</span>
+</div>
+<div class="flex justify-between pb-2">
+<span class="text-outline">Auth Provider:</span>
+<span class="font-medium text-primary">Firebase Cloud Token</span>
+</div>
+<div class="flex justify-between pb-2">
+<span class="text-outline">Last Synchronized:</span>
+<span class="font-medium text-primary">Today • 05:14 PM</span>
+</div>
+<div class="flex justify-between pb-2">
+<span class="text-outline">IP Node:</span>
+<span class="font-mono text-outline">103.24.18.112 (Rajasthan)</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-secondary font-medium">SSL 256-bit Encrypted</span>
+<button class="font-label-sm text-label-sm text-outline hover:text-error transition-colors uppercase font-semibold">
+            Terminate Session
+          </button>
+</div>
+</section>
+</div>
+</div>
+</div></main></div></body></html>
